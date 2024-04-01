@@ -1,0 +1,146 @@
+2024-03-10 13:47:13,304 INFO - Task context logging is enabled
+2024-03-10 13:47:13,305 INFO - Loaded executor: SequentialExecutor
+2024-03-10 13:47:13,612 INFO - Starting the scheduler
+2024-03-10 13:47:13,614 INFO - Processing each file at most -1 times
+2024-03-10 13:47:13,641 INFO - Launched DagFileProcessorManager with pid: 4774
+2024-03-10 13:47:13,644 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 13:47:13,647 INFO - Configured default timezone UTC
+2024-03-10 13:47:13,743 INFO - Marked 1 SchedulerJob instances as failed
+2024-03-10 13:47:14,656 INFO - Setting next_dagrun for example_bash_operator to 2024-03-10 00:00:00+00:00, run_after=2024-03-11 00:00:00+00:00
+2024-03-10 13:47:15,044 INFO - 6 tasks up for execution:
+	<TaskInstance: data_fetch_pipeline_big_data.fetch_location_data manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_0 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_1 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_2 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.also_run_this scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.this_will_skip scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+2024-03-10 13:47:15,044 INFO - DAG data_fetch_pipeline_big_data has 0/16 running and queued tasks
+2024-03-10 13:47:15,045 INFO - DAG example_bash_operator has 0/16 running and queued tasks
+2024-03-10 13:47:15,045 INFO - DAG example_bash_operator has 1/16 running and queued tasks
+2024-03-10 13:47:15,045 INFO - DAG example_bash_operator has 2/16 running and queued tasks
+2024-03-10 13:47:15,046 INFO - DAG example_bash_operator has 3/16 running and queued tasks
+2024-03-10 13:47:15,046 INFO - DAG example_bash_operator has 4/16 running and queued tasks
+2024-03-10 13:47:15,046 INFO - Setting the following tasks to queued state:
+	<TaskInstance: data_fetch_pipeline_big_data.fetch_location_data manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_0 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_1 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_2 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.also_run_this scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.this_will_skip scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+2024-03-10 13:47:15,049 WARNING - cannot record scheduled_duration for task fetch_location_data because previous state change time has not been saved
+2024-03-10 13:47:15,050 WARNING - cannot record scheduled_duration for task runme_0 because previous state change time has not been saved
+2024-03-10 13:47:15,050 WARNING - cannot record scheduled_duration for task runme_1 because previous state change time has not been saved
+2024-03-10 13:47:15,050 WARNING - cannot record scheduled_duration for task runme_2 because previous state change time has not been saved
+2024-03-10 13:47:15,050 WARNING - cannot record scheduled_duration for task also_run_this because previous state change time has not been saved
+2024-03-10 13:47:15,050 WARNING - cannot record scheduled_duration for task this_will_skip because previous state change time has not been saved
+2024-03-10 13:47:15,051 INFO - Sending TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='fetch_location_data', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2024-03-10 13:47:15,051 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'fetch_location_data', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py']
+2024-03-10 13:47:15,052 INFO - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_0', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2024-03-10 13:47:15,052 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_0', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:47:15,052 INFO - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_1', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2024-03-10 13:47:15,052 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_1', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:47:15,053 INFO - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_2', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2024-03-10 13:47:15,053 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_2', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:47:15,053 INFO - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='also_run_this', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2024-03-10 13:47:15,053 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'also_run_this', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:47:15,054 INFO - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='this_will_skip', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2024-03-10 13:47:15,054 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'this_will_skip', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:47:15,133 INFO - Executing command: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'fetch_location_data', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py']
+2024-03-10 13:48:14,860 INFO - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_0', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:48:19,650 INFO - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_1', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:48:24,685 INFO - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_2', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:48:29,969 INFO - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'also_run_this', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:48:33,978 INFO - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'this_will_skip', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:48:37,452 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='fetch_location_data', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=1, map_index=-1)
+2024-03-10 13:48:37,453 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_0', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)
+2024-03-10 13:48:37,453 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_1', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)
+2024-03-10 13:48:37,453 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_2', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)
+2024-03-10 13:48:37,453 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='also_run_this', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)
+2024-03-10 13:48:37,453 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='this_will_skip', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)
+2024-03-10 13:48:37,459 INFO - TaskInstance Finished: dag_id=example_bash_operator, task_id=also_run_this, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:32.382617+00:00, run_end_date=2024-03-10 08:18:33.264298+00:00, run_duration=0.881681, state=success, executor_state=success, try_number=1, max_tries=0, job_id=20, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=5490
+2024-03-10 13:48:37,459 INFO - TaskInstance Finished: dag_id=example_bash_operator, task_id=runme_0, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:17.222491+00:00, run_end_date=2024-03-10 08:18:18.939450+00:00, run_duration=1.716959, state=success, executor_state=success, try_number=1, max_tries=0, job_id=17, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=4892
+2024-03-10 13:48:37,459 INFO - TaskInstance Finished: dag_id=example_bash_operator, task_id=runme_1, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:22.125280+00:00, run_end_date=2024-03-10 08:18:23.813105+00:00, run_duration=1.687825, state=success, executor_state=success, try_number=1, max_tries=0, job_id=18, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=4904
+2024-03-10 13:48:37,460 INFO - TaskInstance Finished: dag_id=example_bash_operator, task_id=runme_2, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:27.368969+00:00, run_end_date=2024-03-10 08:18:29.181730+00:00, run_duration=1.812761, state=success, executor_state=success, try_number=1, max_tries=0, job_id=19, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=5362
+2024-03-10 13:48:37,460 INFO - TaskInstance Finished: dag_id=example_bash_operator, task_id=this_will_skip, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:36.187988+00:00, run_end_date=2024-03-10 08:18:36.708149+00:00, run_duration=0.520161, state=skipped, executor_state=success, try_number=1, max_tries=0, job_id=21, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=5515
+2024-03-10 13:48:37,460 INFO - TaskInstance Finished: dag_id=data_fetch_pipeline_big_data, task_id=fetch_location_data, run_id=manual__2024-03-03T11:09:06.924388+00:00, map_index=-1, run_start_date=2024-03-10 08:17:22.095594+00:00, run_end_date=2024-03-10 08:18:13.872094+00:00, run_duration=51.7765, state=success, executor_state=success, try_number=1, max_tries=1, job_id=16, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=4785
+2024-03-10 13:48:37,471 ERROR - DagFileProcessorManager (PID=4774) last sent a heartbeat 82.88 seconds ago! Restarting it
+2024-03-10 13:48:37,476 INFO - Sending 15 to group 4774. PIDs of all processes in the group: [4774]
+2024-03-10 13:48:37,476 INFO - Sending the signal 15 to group 4774
+2024-03-10 13:48:37,649 INFO - Process psutil.Process(pid=4774, status='terminated', exitcode=0, started='13:47:13') (4774) terminated with exit code 0
+2024-03-10 13:48:37,657 INFO - Launched DagFileProcessorManager with pid: 5517
+2024-03-10 13:48:37,668 INFO - Configured default timezone UTC
+2024-03-10 13:48:38,204 INFO - 2 tasks up for execution:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.run_after_loop scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+2024-03-10 13:48:38,205 INFO - DAG data_fetch_pipeline_big_data has 0/16 running and queued tasks
+2024-03-10 13:48:38,205 INFO - DAG example_bash_operator has 0/16 running and queued tasks
+2024-03-10 13:48:38,206 INFO - Setting the following tasks to queued state:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.run_after_loop scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+2024-03-10 13:48:38,211 WARNING - cannot record scheduled_duration for task select_random_files because previous state change time has not been saved
+2024-03-10 13:48:38,212 WARNING - cannot record scheduled_duration for task run_after_loop because previous state change time has not been saved
+2024-03-10 13:48:38,213 INFO - Sending TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2024-03-10 13:48:38,214 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py']
+2024-03-10 13:48:38,215 INFO - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='run_after_loop', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2024-03-10 13:48:38,215 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'run_after_loop', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:48:38,297 INFO - Executing command: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py']
+2024-03-10 13:48:41,337 INFO - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'run_after_loop', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py']
+2024-03-10 13:48:44,590 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=1, map_index=-1)
+2024-03-10 13:48:44,591 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='run_after_loop', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)
+2024-03-10 13:48:44,596 INFO - TaskInstance Finished: dag_id=example_bash_operator, task_id=run_after_loop, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:43.339640+00:00, run_end_date=2024-03-10 08:18:43.954991+00:00, run_duration=0.615351, state=success, executor_state=success, try_number=1, max_tries=0, job_id=24, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2024-03-10 08:18:38.208019+00:00, queued_by_job_id=15, pid=5542
+2024-03-10 13:48:44,596 INFO - TaskInstance Finished: dag_id=data_fetch_pipeline_big_data, task_id=select_random_files, run_id=manual__2024-03-03T11:09:06.924388+00:00, map_index=-1, run_start_date=2024-03-10 08:18:40.177664+00:00, run_end_date=2024-03-10 08:18:40.667571+00:00, run_duration=0.489907, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=22, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-03-10 08:18:38.208019+00:00, queued_by_job_id=15, pid=5528
+2024-03-10 13:48:49,890 INFO - Marking run <DagRun hello_world @ 2024-03-10 07:00:00+00:00: scheduled__2024-03-10T07:00:00+00:00, state:running, queued_at: 2024-03-10 08:18:45.865630+00:00. externally triggered: False> successful
+2024-03-10 13:48:49,891 INFO - DagRun Finished: dag_id=hello_world, execution_date=2024-03-10 07:00:00+00:00, run_id=scheduled__2024-03-10T07:00:00+00:00, run_start_date=2024-03-10 08:18:45.961040+00:00, run_end_date=2024-03-10 08:18:49.891778+00:00, run_duration=3.930738, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2024-03-10 07:00:00+00:00, data_interval_end=2024-03-10 08:00:00+00:00, dag_hash=2ae157940796c15adf34d7e917573a70
+2024-03-10 13:48:49,899 INFO - Setting next_dagrun for hello_world to 2024-03-10 08:00:00+00:00, run_after=2024-03-10 09:00:00+00:00
+2024-03-10 13:49:40,952 INFO - 1 tasks up for execution:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+2024-03-10 13:49:40,953 INFO - DAG data_fetch_pipeline_big_data has 0/16 running and queued tasks
+2024-03-10 13:49:40,953 INFO - Setting the following tasks to queued state:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+2024-03-10 13:49:40,958 INFO - Sending TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=2, map_index=-1) to executor with priority 2 and queue default
+2024-03-10 13:49:40,958 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py']
+2024-03-10 13:49:41,039 INFO - Executing command: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py']
+2024-03-10 13:49:44,418 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=2, map_index=-1)
+2024-03-10 13:49:44,482 INFO - TaskInstance Finished: dag_id=data_fetch_pipeline_big_data, task_id=select_random_files, run_id=manual__2024-03-03T11:09:06.924388+00:00, map_index=-1, run_start_date=2024-03-10 08:19:43.240421+00:00, run_end_date=2024-03-10 08:19:43.723104+00:00, run_duration=0.482683, state=failed, executor_state=success, try_number=2, max_tries=1, job_id=26, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-03-10 08:19:40.955085+00:00, queued_by_job_id=15, pid=5711
+2024-03-10 13:52:13,926 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 13:57:14,295 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:02:14,673 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:07:14,792 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:12:15,150 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:17:15,397 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:22:15,416 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:27:15,879 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:30:16,052 INFO - Marking run <DagRun hello_world @ 2024-03-10 08:00:00+00:00: scheduled__2024-03-10T08:00:00+00:00, state:running, queued_at: 2024-03-10 09:00:01.774570+00:00. externally triggered: False> successful
+2024-03-10 14:30:16,053 INFO - DagRun Finished: dag_id=hello_world, execution_date=2024-03-10 08:00:00+00:00, run_id=scheduled__2024-03-10T08:00:00+00:00, run_start_date=2024-03-10 09:00:01.898606+00:00, run_end_date=2024-03-10 09:00:16.053271+00:00, run_duration=14.154665, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2024-03-10 08:00:00+00:00, data_interval_end=2024-03-10 09:00:00+00:00, dag_hash=2ae157940796c15adf34d7e917573a70
+2024-03-10 14:30:16,059 INFO - Setting next_dagrun for hello_world to 2024-03-10 09:00:00+00:00, run_after=2024-03-10 10:00:00+00:00
+2024-03-10 14:32:16,242 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:37:16,341 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:41:12,627 INFO - 1 tasks up for execution:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-10T09:10:41.696863+00:00 [scheduled]>
+2024-03-10 14:41:12,628 INFO - DAG data_fetch_pipeline_big_data has 0/16 running and queued tasks
+2024-03-10 14:41:12,629 INFO - Setting the following tasks to queued state:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-10T09:10:41.696863+00:00 [scheduled]>
+2024-03-10 14:41:12,632 WARNING - cannot record scheduled_duration for task select_random_files because previous state change time has not been saved
+2024-03-10 14:41:12,634 INFO - Sending TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-10T09:10:41.696863+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2024-03-10 14:41:12,634 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-10T09:10:41.696863+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py']
+2024-03-10 14:41:12,711 INFO - Executing command: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-10T09:10:41.696863+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py']
+2024-03-10 14:41:16,817 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-10T09:10:41.696863+00:00', try_number=1, map_index=-1)
+2024-03-10 14:41:16,820 INFO - TaskInstance Finished: dag_id=data_fetch_pipeline_big_data, task_id=select_random_files, run_id=manual__2024-03-10T09:10:41.696863+00:00, map_index=-1, run_start_date=2024-03-10 09:11:15.171055+00:00, run_end_date=2024-03-10 09:11:15.984292+00:00, run_duration=0.813237, state=success, executor_state=success, try_number=1, max_tries=1, job_id=29, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-03-10 09:11:12.630728+00:00, queued_by_job_id=15, pid=14030
+2024-03-10 14:42:17,064 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:42:23,675 ERROR - Marking run <DagRun data_fetch_pipeline_big_data @ 2024-03-10 09:10:41.696863+00:00: manual__2024-03-10T09:10:41.696863+00:00, state:running, queued_at: 2024-03-10 09:10:41.727522+00:00. externally triggered: True> failed
+2024-03-10 14:42:23,676 INFO - DagRun Finished: dag_id=data_fetch_pipeline_big_data, execution_date=2024-03-10 09:10:41.696863+00:00, run_id=manual__2024-03-10T09:10:41.696863+00:00, run_start_date=2024-03-10 09:10:43.832271+00:00, run_end_date=2024-03-10 09:12:23.676024+00:00, run_duration=99.843753, state=failed, external_trigger=True, run_type=manual, data_interval_start=2024-03-10 09:10:41.696863+00:00, data_interval_end=2024-03-10 09:10:41.696863+00:00, dag_hash=1a4449422c867970ac7c6342e71b099c
+2024-03-10 14:47:17,136 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:52:17,667 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 14:57:17,913 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:02:18,053 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:07:18,564 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:27:21,728 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:30:04,825 INFO - Marking run <DagRun hello_world @ 2024-03-10 09:00:00+00:00: scheduled__2024-03-10T09:00:00+00:00, state:running, queued_at: 2024-03-10 10:00:01.250203+00:00. externally triggered: False> successful
+2024-03-10 15:30:04,826 INFO - DagRun Finished: dag_id=hello_world, execution_date=2024-03-10 09:00:00+00:00, run_id=scheduled__2024-03-10T09:00:00+00:00, run_start_date=2024-03-10 10:00:01.346370+00:00, run_end_date=2024-03-10 10:00:04.826299+00:00, run_duration=3.479929, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2024-03-10 09:00:00+00:00, data_interval_end=2024-03-10 10:00:00+00:00, dag_hash=2ae157940796c15adf34d7e917573a70
+2024-03-10 15:30:04,830 INFO - Setting next_dagrun for hello_world to 2024-03-10 10:00:00+00:00, run_after=2024-03-10 11:00:00+00:00
+2024-03-10 15:32:22,077 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:37:22,447 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:42:22,619 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:47:23,539 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:52:23,864 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-03-10 15:57:24,018 INFO - Adopting or resetting orphaned tasks for active dag runs

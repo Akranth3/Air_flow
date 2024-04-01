@@ -1,0 +1,61 @@
+[2024-03-03T15:51:57.330+0530] {processor.py:161} INFO - Started process (PID=10241) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T15:51:57.330+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T15:51:57.331+0530] {logging_mixin.py:188} INFO - [2024-03-03T15:51:57.331+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T15:51:57.342+0530] {logging_mixin.py:188} INFO - [2024-03-03T15:51:57.341+0530] {templater.py:95} ERROR - Failed to resolve template field 'bash_command'
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/template/templater.py", line 93, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/jinja2/loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/akranth/airflow/dags/task_3.sh
+[2024-03-03T15:51:57.345+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T15:51:57.413+0530] {logging_mixin.py:188} INFO - [2024-03-03T15:51:57.413+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T15:51:57.572+0530] {logging_mixin.py:188} INFO - [2024-03-03T15:51:57.572+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T15:51:57.894+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.566 seconds
+[2024-03-03T16:02:22.838+0530] {processor.py:161} INFO - Started process (PID=3254) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:02:22.856+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T16:02:22.857+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:02:22.857+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:02:22.868+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:02:22.867+0530] {templater.py:95} ERROR - Failed to resolve template field 'bash_command'
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/template/templater.py", line 93, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/jinja2/loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/akranth/airflow/dags/task_3.sh
+[2024-03-03T16:02:22.871+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:02:22.876+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:02:22.876+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T16:02:22.886+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:02:22.886+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T16:02:23.012+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.176 seconds
+[2024-03-03T16:04:20.837+0530] {processor.py:161} INFO - Started process (PID=4045) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:04:20.840+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T16:04:20.840+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:20.840+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:04:20.846+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:20.846+0530] {templater.py:95} ERROR - Failed to resolve template field 'bash_command'
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/template/templater.py", line 93, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/jinja2/loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/akranth/airflow/dags/task_3.sh
+[2024-03-03T16:04:20.846+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:04:20.996+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:20.996+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T16:04:21.002+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:21.002+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T16:04:21.110+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.275 seconds
+[2024-03-03T16:09:57.097+0530] {processor.py:161} INFO - Started process (PID=5390) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:09:57.106+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T16:09:57.106+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:09:57.106+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:09:57.114+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:09:57.113+0530] {templater.py:95} ERROR - Failed to resolve template field 'bash_command'
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/template/templater.py", line 93, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/jinja2/loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/akranth/airflow/dags/task_3.sh
+[2024-03-03T16:09:57.117+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T16:09:57.196+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:09:57.195+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T16:09:57.204+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:09:57.204+0530] {dag.py:3069} INFO - Creating ORM DAG for data_fetch_pipeline
+[2024-03-03T16:09:57.205+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:09:57.205+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T16:09:57.372+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.277 seconds

@@ -1,0 +1,10 @@
+[2024-03-03T16:04:33.656+0530] {processor.py:161} INFO - Started process (PID=4086) to work on /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2024-03-03T16:04:33.657+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2024-03-03T16:04:33.657+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:33.657+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2024-03-03T16:04:33.999+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2024-03-03T16:04:34.002+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.348 seconds
+[2024-03-03T16:10:00.324+0530] {processor.py:161} INFO - Started process (PID=5397) to work on /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2024-03-03T16:10:00.326+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2024-03-03T16:10:00.328+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:10:00.327+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2024-03-03T16:10:00.779+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2024-03-03T16:10:00.784+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.466 seconds

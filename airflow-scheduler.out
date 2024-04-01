@@ -1,0 +1,286 @@
+[[34m2024-03-10T13:47:13.304+0530[0m] {[34mtask_context_logger.py:[0m63} INFO[0m - Task context logging is enabled[0m
+[[34m2024-03-10T13:47:13.305+0530[0m] {[34mexecutor_loader.py:[0m115} INFO[0m - Loaded executor: SequentialExecutor[0m
+[[34m2024-03-10T13:47:13.612+0530[0m] {[34mscheduler_job_runner.py:[0m808} INFO[0m - Starting the scheduler[0m
+[[34m2024-03-10T13:47:13.614+0530[0m] {[34mscheduler_job_runner.py:[0m815} INFO[0m - Processing each file at most -1 times[0m
+[[34m2024-03-10T13:47:13.641+0530[0m] {[34mmanager.py:[0m169} INFO[0m - Launched DagFileProcessorManager with pid: 4774[0m
+[[34m2024-03-10T13:47:13.644+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T13:47:13.647+0530[0m] {[34msettings.py:[0m60} INFO[0m - Configured default timezone UTC[0m
+[2024-03-10T13:47:13.687+0530] {manager.py:392} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2024-03-10T13:47:13.743+0530[0m] {[34mscheduler_job_runner.py:[0m1631} INFO[0m - Marked 1 SchedulerJob instances as failed[0m
+[[34m2024-03-10T13:47:14.656+0530[0m] {[34mdag.py:[0m3834} INFO[0m - Setting next_dagrun for example_bash_operator to 2024-03-10 00:00:00+00:00, run_after=2024-03-11 00:00:00+00:00[0m
+[[34m2024-03-10T13:47:15.044+0530[0m] {[34mscheduler_job_runner.py:[0m424} INFO[0m - 6 tasks up for execution:
+	<TaskInstance: data_fetch_pipeline_big_data.fetch_location_data manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_0 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_1 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_2 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.also_run_this scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.this_will_skip scheduled__2024-03-09T00:00:00+00:00 [scheduled]>[0m
+[[34m2024-03-10T13:47:15.044+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG data_fetch_pipeline_big_data has 0/16 running and queued tasks[0m
+[[34m2024-03-10T13:47:15.045+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG example_bash_operator has 0/16 running and queued tasks[0m
+[[34m2024-03-10T13:47:15.045+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG example_bash_operator has 1/16 running and queued tasks[0m
+[[34m2024-03-10T13:47:15.045+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG example_bash_operator has 2/16 running and queued tasks[0m
+[[34m2024-03-10T13:47:15.046+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG example_bash_operator has 3/16 running and queued tasks[0m
+[[34m2024-03-10T13:47:15.046+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG example_bash_operator has 4/16 running and queued tasks[0m
+[[34m2024-03-10T13:47:15.046+0530[0m] {[34mscheduler_job_runner.py:[0m603} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: data_fetch_pipeline_big_data.fetch_location_data manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_0 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_1 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.runme_2 scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.also_run_this scheduled__2024-03-09T00:00:00+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.this_will_skip scheduled__2024-03-09T00:00:00+00:00 [scheduled]>[0m
+[[34m2024-03-10T13:47:15.049+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task fetch_location_data because previous state change time has not been saved[0m
+[[34m2024-03-10T13:47:15.050+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task runme_0 because previous state change time has not been saved[0m
+[[34m2024-03-10T13:47:15.050+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task runme_1 because previous state change time has not been saved[0m
+[[34m2024-03-10T13:47:15.050+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task runme_2 because previous state change time has not been saved[0m
+[[34m2024-03-10T13:47:15.050+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task also_run_this because previous state change time has not been saved[0m
+[[34m2024-03-10T13:47:15.050+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task this_will_skip because previous state change time has not been saved[0m
+[[34m2024-03-10T13:47:15.051+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='fetch_location_data', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default[0m
+[[34m2024-03-10T13:47:15.051+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'fetch_location_data', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py'][0m
+[[34m2024-03-10T13:47:15.052+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_0', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default[0m
+[[34m2024-03-10T13:47:15.052+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_0', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:47:15.052+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_1', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default[0m
+[[34m2024-03-10T13:47:15.052+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_1', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:47:15.053+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_2', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default[0m
+[[34m2024-03-10T13:47:15.053+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_2', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:47:15.053+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='also_run_this', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2024-03-10T13:47:15.053+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'also_run_this', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:47:15.054+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='this_will_skip', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2024-03-10T13:47:15.054+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'this_will_skip', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:47:15.133+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'fetch_location_data', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py'][0m
+[[34m2024-03-10T13:47:16.457+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/dags/big_data_lab.py[0m
+[[34m2024-03-10T13:47:16.484+0530[0m] {[34mtemplater.py:[0m95} ERROR[0m - Failed to resolve template field 'bash_command'[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/template/templater.py", line 93, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/jinja2/loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/akranth/airflow/dags/task_3.sh
+[[34m2024-03-10T13:47:16.580+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:47:17.114+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:47:17.115+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=data_fetch_pipeline_big_data/run_id=manual__2024-03-03T11:09:06.924388+00:00/task_id=fetch_location_data permission to 509
+Changing /home/akranth/airflow/logs/dag_id=data_fetch_pipeline_big_data/run_id=manual__2024-03-03T11:09:06.924388+00:00 permission to 509
+Changing /home/akranth/airflow/logs/dag_id=data_fetch_pipeline_big_data permission to 509
+[[34m2024-03-10T13:47:21.725+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: data_fetch_pipeline_big_data.fetch_location_data manual__2024-03-03T11:09:06.924388+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:48:14.860+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_0', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:48:16.266+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py[0m
+[[34m2024-03-10T13:48:16.370+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:48:16.463+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:48:16.463+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=example_bash_operator/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=runme_0 permission to 509
+Changing /home/akranth/airflow/logs/dag_id=example_bash_operator/run_id=scheduled__2024-03-09T00:00:00+00:00 permission to 509
+Changing /home/akranth/airflow/logs/dag_id=example_bash_operator permission to 509
+[[34m2024-03-10T13:48:17.071+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: example_bash_operator.runme_0 scheduled__2024-03-09T00:00:00+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:48:19.650+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_1', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:48:21.105+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py[0m
+[[34m2024-03-10T13:48:21.214+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:48:21.315+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:48:21.315+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=example_bash_operator/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=runme_1 permission to 509
+[[34m2024-03-10T13:48:21.895+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: example_bash_operator.runme_1 scheduled__2024-03-09T00:00:00+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:48:24.685+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'runme_2', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:48:26.136+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py[0m
+[[34m2024-03-10T13:48:26.265+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:48:26.401+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:48:26.402+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=example_bash_operator/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=runme_2 permission to 509
+[[34m2024-03-10T13:48:27.228+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: example_bash_operator.runme_2 scheduled__2024-03-09T00:00:00+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:48:29.969+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'also_run_this', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:48:31.431+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py[0m
+[[34m2024-03-10T13:48:31.540+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:48:31.627+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:48:31.628+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=example_bash_operator/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=also_run_this permission to 509
+[[34m2024-03-10T13:48:32.216+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: example_bash_operator.also_run_this scheduled__2024-03-09T00:00:00+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:48:33.978+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'this_will_skip', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:48:35.328+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py[0m
+[[34m2024-03-10T13:48:35.433+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:48:35.513+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:48:35.514+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=example_bash_operator/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=this_will_skip permission to 509
+[[34m2024-03-10T13:48:36.022+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: example_bash_operator.this_will_skip scheduled__2024-03-09T00:00:00+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:48:37.452+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='fetch_location_data', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T13:48:37.453+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_0', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T13:48:37.453+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_1', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T13:48:37.453+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='runme_2', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T13:48:37.453+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='also_run_this', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T13:48:37.453+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='this_will_skip', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T13:48:37.459+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=example_bash_operator, task_id=also_run_this, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:32.382617+00:00, run_end_date=2024-03-10 08:18:33.264298+00:00, run_duration=0.881681, state=success, executor_state=success, try_number=1, max_tries=0, job_id=20, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=5490[0m
+[[34m2024-03-10T13:48:37.459+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=example_bash_operator, task_id=runme_0, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:17.222491+00:00, run_end_date=2024-03-10 08:18:18.939450+00:00, run_duration=1.716959, state=success, executor_state=success, try_number=1, max_tries=0, job_id=17, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=4892[0m
+[[34m2024-03-10T13:48:37.459+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=example_bash_operator, task_id=runme_1, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:22.125280+00:00, run_end_date=2024-03-10 08:18:23.813105+00:00, run_duration=1.687825, state=success, executor_state=success, try_number=1, max_tries=0, job_id=18, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=4904[0m
+[[34m2024-03-10T13:48:37.460+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=example_bash_operator, task_id=runme_2, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:27.368969+00:00, run_end_date=2024-03-10 08:18:29.181730+00:00, run_duration=1.812761, state=success, executor_state=success, try_number=1, max_tries=0, job_id=19, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=5362[0m
+[[34m2024-03-10T13:48:37.460+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=example_bash_operator, task_id=this_will_skip, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:36.187988+00:00, run_end_date=2024-03-10 08:18:36.708149+00:00, run_duration=0.520161, state=skipped, executor_state=success, try_number=1, max_tries=0, job_id=21, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=5515[0m
+[[34m2024-03-10T13:48:37.460+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=data_fetch_pipeline_big_data, task_id=fetch_location_data, run_id=manual__2024-03-03T11:09:06.924388+00:00, map_index=-1, run_start_date=2024-03-10 08:17:22.095594+00:00, run_end_date=2024-03-10 08:18:13.872094+00:00, run_duration=51.7765, state=success, executor_state=success, try_number=1, max_tries=1, job_id=16, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2024-03-10 08:17:15.047683+00:00, queued_by_job_id=15, pid=4785[0m
+[[34m2024-03-10T13:48:37.471+0530[0m] {[34mmanager.py:[0m284} ERROR[0m - DagFileProcessorManager (PID=4774) last sent a heartbeat 82.88 seconds ago! Restarting it[0m
+[[34m2024-03-10T13:48:37.476+0530[0m] {[34mprocess_utils.py:[0m131} INFO[0m - Sending 15 to group 4774. PIDs of all processes in the group: [4774][0m
+[[34m2024-03-10T13:48:37.476+0530[0m] {[34mprocess_utils.py:[0m86} INFO[0m - Sending the signal 15 to group 4774[0m
+[[34m2024-03-10T13:48:37.649+0530[0m] {[34mprocess_utils.py:[0m79} INFO[0m - Process psutil.Process(pid=4774, status='terminated', exitcode=0, started='13:47:13') (4774) terminated with exit code 0[0m
+[[34m2024-03-10T13:48:37.657+0530[0m] {[34mmanager.py:[0m169} INFO[0m - Launched DagFileProcessorManager with pid: 5517[0m
+[[34m2024-03-10T13:48:37.668+0530[0m] {[34msettings.py:[0m60} INFO[0m - Configured default timezone UTC[0m
+[2024-03-10T13:48:37.700+0530] {manager.py:392} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2024-03-10T13:48:38.204+0530[0m] {[34mscheduler_job_runner.py:[0m424} INFO[0m - 2 tasks up for execution:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.run_after_loop scheduled__2024-03-09T00:00:00+00:00 [scheduled]>[0m
+[[34m2024-03-10T13:48:38.205+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG data_fetch_pipeline_big_data has 0/16 running and queued tasks[0m
+[[34m2024-03-10T13:48:38.205+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG example_bash_operator has 0/16 running and queued tasks[0m
+[[34m2024-03-10T13:48:38.206+0530[0m] {[34mscheduler_job_runner.py:[0m603} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>
+	<TaskInstance: example_bash_operator.run_after_loop scheduled__2024-03-09T00:00:00+00:00 [scheduled]>[0m
+[[34m2024-03-10T13:48:38.211+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task select_random_files because previous state change time has not been saved[0m
+[[34m2024-03-10T13:48:38.212+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task run_after_loop because previous state change time has not been saved[0m
+[[34m2024-03-10T13:48:38.213+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2024-03-10T13:48:38.214+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py'][0m
+[[34m2024-03-10T13:48:38.215+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='example_bash_operator', task_id='run_after_loop', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2024-03-10T13:48:38.215+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'example_bash_operator', 'run_after_loop', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:48:38.297+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py'][0m
+[[34m2024-03-10T13:48:39.408+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/dags/big_data_lab.py[0m
+[[34m2024-03-10T13:48:39.434+0530[0m] {[34mtemplater.py:[0m95} ERROR[0m - Failed to resolve template field 'bash_command'[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/template/templater.py", line 93, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/jinja2/loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/akranth/airflow/dags/task_3.sh
+[[34m2024-03-10T13:48:39.499+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:48:39.579+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:48:39.579+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=data_fetch_pipeline_big_data/run_id=manual__2024-03-03T11:09:06.924388+00:00/task_id=select_random_files permission to 509
+[[34m2024-03-10T13:48:40.042+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:48:41.337+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'example_bash_operator', 'run_after_loop', 'scheduled__2024-03-09T00:00:00+00:00', '--local', '--subdir', '/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py'][0m
+[[34m2024-03-10T13:48:42.535+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_bash_operator.py[0m
+[[34m2024-03-10T13:48:42.635+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:48:42.730+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:48:42.730+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=example_bash_operator/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=run_after_loop permission to 509
+[[34m2024-03-10T13:48:43.207+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: example_bash_operator.run_after_loop scheduled__2024-03-09T00:00:00+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:48:44.590+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T13:48:44.591+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='example_bash_operator', task_id='run_after_loop', run_id='scheduled__2024-03-09T00:00:00+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T13:48:44.596+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=example_bash_operator, task_id=run_after_loop, run_id=scheduled__2024-03-09T00:00:00+00:00, map_index=-1, run_start_date=2024-03-10 08:18:43.339640+00:00, run_end_date=2024-03-10 08:18:43.954991+00:00, run_duration=0.615351, state=success, executor_state=success, try_number=1, max_tries=0, job_id=24, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2024-03-10 08:18:38.208019+00:00, queued_by_job_id=15, pid=5542[0m
+[[34m2024-03-10T13:48:44.596+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=data_fetch_pipeline_big_data, task_id=select_random_files, run_id=manual__2024-03-03T11:09:06.924388+00:00, map_index=-1, run_start_date=2024-03-10 08:18:40.177664+00:00, run_end_date=2024-03-10 08:18:40.667571+00:00, run_duration=0.489907, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=22, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-03-10 08:18:38.208019+00:00, queued_by_job_id=15, pid=5528[0m
+[[34m2024-03-10T13:48:49.890+0530[0m] {[34mdagrun.py:[0m795} INFO[0m - Marking run <DagRun hello_world @ 2024-03-10 07:00:00+00:00: scheduled__2024-03-10T07:00:00+00:00, state:running, queued_at: 2024-03-10 08:18:45.865630+00:00. externally triggered: False> successful[0m
+[[34m2024-03-10T13:48:49.891+0530[0m] {[34mdagrun.py:[0m846} INFO[0m - DagRun Finished: dag_id=hello_world, execution_date=2024-03-10 07:00:00+00:00, run_id=scheduled__2024-03-10T07:00:00+00:00, run_start_date=2024-03-10 08:18:45.961040+00:00, run_end_date=2024-03-10 08:18:49.891778+00:00, run_duration=3.930738, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2024-03-10 07:00:00+00:00, data_interval_end=2024-03-10 08:00:00+00:00, dag_hash=2ae157940796c15adf34d7e917573a70[0m
+[[34m2024-03-10T13:48:49.899+0530[0m] {[34mdag.py:[0m3834} INFO[0m - Setting next_dagrun for hello_world to 2024-03-10 08:00:00+00:00, run_after=2024-03-10 09:00:00+00:00[0m
+[[34m2024-03-10T13:49:40.952+0530[0m] {[34mscheduler_job_runner.py:[0m424} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>[0m
+[[34m2024-03-10T13:49:40.953+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG data_fetch_pipeline_big_data has 0/16 running and queued tasks[0m
+[[34m2024-03-10T13:49:40.953+0530[0m] {[34mscheduler_job_runner.py:[0m603} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [scheduled]>[0m
+[[34m2024-03-10T13:49:40.958+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=2, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2024-03-10T13:49:40.958+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py'][0m
+[[34m2024-03-10T13:49:41.039+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-03T11:09:06.924388+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py'][0m
+[[34m2024-03-10T13:49:42.240+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/dags/big_data_lab.py[0m
+[[34m2024-03-10T13:49:42.261+0530[0m] {[34mtemplater.py:[0m95} ERROR[0m - Failed to resolve template field 'bash_command'[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/template/templater.py", line 93, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/jinja2/loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/akranth/airflow/dags/task_3.sh
+[[34m2024-03-10T13:49:42.327+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:49:42.405+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T13:49:42.405+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T13:49:42.867+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-03T11:09:06.924388+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T13:49:44.418+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-03T11:09:06.924388+00:00', try_number=2, map_index=-1)[0m
+[[34m2024-03-10T13:49:44.482+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=data_fetch_pipeline_big_data, task_id=select_random_files, run_id=manual__2024-03-03T11:09:06.924388+00:00, map_index=-1, run_start_date=2024-03-10 08:19:43.240421+00:00, run_end_date=2024-03-10 08:19:43.723104+00:00, run_duration=0.482683, state=failed, executor_state=success, try_number=2, max_tries=1, job_id=26, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-03-10 08:19:40.955085+00:00, queued_by_job_id=15, pid=5711[0m
+[[34m2024-03-10T13:52:13.926+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T13:57:14.295+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:02:14.673+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:07:14.792+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:12:15.150+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:17:15.397+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:22:15.416+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:27:15.879+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:30:16.052+0530[0m] {[34mdagrun.py:[0m795} INFO[0m - Marking run <DagRun hello_world @ 2024-03-10 08:00:00+00:00: scheduled__2024-03-10T08:00:00+00:00, state:running, queued_at: 2024-03-10 09:00:01.774570+00:00. externally triggered: False> successful[0m
+[[34m2024-03-10T14:30:16.053+0530[0m] {[34mdagrun.py:[0m846} INFO[0m - DagRun Finished: dag_id=hello_world, execution_date=2024-03-10 08:00:00+00:00, run_id=scheduled__2024-03-10T08:00:00+00:00, run_start_date=2024-03-10 09:00:01.898606+00:00, run_end_date=2024-03-10 09:00:16.053271+00:00, run_duration=14.154665, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2024-03-10 08:00:00+00:00, data_interval_end=2024-03-10 09:00:00+00:00, dag_hash=2ae157940796c15adf34d7e917573a70[0m
+[[34m2024-03-10T14:30:16.059+0530[0m] {[34mdag.py:[0m3834} INFO[0m - Setting next_dagrun for hello_world to 2024-03-10 09:00:00+00:00, run_after=2024-03-10 10:00:00+00:00[0m
+[[34m2024-03-10T14:32:16.242+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:37:16.341+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:41:12.627+0530[0m] {[34mscheduler_job_runner.py:[0m424} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-10T09:10:41.696863+00:00 [scheduled]>[0m
+[[34m2024-03-10T14:41:12.628+0530[0m] {[34mscheduler_job_runner.py:[0m487} INFO[0m - DAG data_fetch_pipeline_big_data has 0/16 running and queued tasks[0m
+[[34m2024-03-10T14:41:12.629+0530[0m] {[34mscheduler_job_runner.py:[0m603} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-10T09:10:41.696863+00:00 [scheduled]>[0m
+[[34m2024-03-10T14:41:12.632+0530[0m] {[34mtaskinstance.py:[0m2283} WARNING[0m - cannot record scheduled_duration for task select_random_files because previous state change time has not been saved[0m
+[[34m2024-03-10T14:41:12.634+0530[0m] {[34mscheduler_job_runner.py:[0m646} INFO[0m - Sending TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-10T09:10:41.696863+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2024-03-10T14:41:12.634+0530[0m] {[34mbase_executor.py:[0m146} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-10T09:10:41.696863+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py'][0m
+[[34m2024-03-10T14:41:12.711+0530[0m] {[34msequential_executor.py:[0m73} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'data_fetch_pipeline_big_data', 'select_random_files', 'manual__2024-03-10T09:10:41.696863+00:00', '--local', '--subdir', 'DAGS_FOLDER/big_data_lab.py'][0m
+[[34m2024-03-10T14:41:14.189+0530[0m] {[34mdagbag.py:[0m540} INFO[0m - Filling up the DagBag from /home/akranth/airflow/dags/big_data_lab.py[0m
+[[34m2024-03-10T14:41:14.218+0530[0m] {[34mtemplater.py:[0m95} ERROR[0m - Failed to resolve template field 'bash_command'[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/template/templater.py", line 93, in resolve_template_files
+    setattr(self, field, env.loader.get_source(env, content)[0])  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/jinja2/loaders.py", line 204, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/akranth/airflow/dags/task_3.sh
+[[34m2024-03-10T14:41:14.302+0530[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2024-03-10T14:41:14.401+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2024-03-10T14:41:14.401+0530[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+Changing /home/akranth/airflow/logs/dag_id=data_fetch_pipeline_big_data/run_id=manual__2024-03-10T09:10:41.696863+00:00/task_id=select_random_files permission to 509
+[[34m2024-03-10T14:41:15.030+0530[0m] {[34mtask_command.py:[0m423} INFO[0m - Running <TaskInstance: data_fetch_pipeline_big_data.select_random_files manual__2024-03-10T09:10:41.696863+00:00 [queued]> on host HP[0m
+[[34m2024-03-10T14:41:16.817+0530[0m] {[34mscheduler_job_runner.py:[0m696} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='data_fetch_pipeline_big_data', task_id='select_random_files', run_id='manual__2024-03-10T09:10:41.696863+00:00', try_number=1, map_index=-1)[0m
+[[34m2024-03-10T14:41:16.820+0530[0m] {[34mscheduler_job_runner.py:[0m733} INFO[0m - TaskInstance Finished: dag_id=data_fetch_pipeline_big_data, task_id=select_random_files, run_id=manual__2024-03-10T09:10:41.696863+00:00, map_index=-1, run_start_date=2024-03-10 09:11:15.171055+00:00, run_end_date=2024-03-10 09:11:15.984292+00:00, run_duration=0.813237, state=success, executor_state=success, try_number=1, max_tries=1, job_id=29, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-03-10 09:11:12.630728+00:00, queued_by_job_id=15, pid=14030[0m
+[[34m2024-03-10T14:42:17.064+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:42:23.675+0530[0m] {[34mdagrun.py:[0m774} ERROR[0m - Marking run <DagRun data_fetch_pipeline_big_data @ 2024-03-10 09:10:41.696863+00:00: manual__2024-03-10T09:10:41.696863+00:00, state:running, queued_at: 2024-03-10 09:10:41.727522+00:00. externally triggered: True> failed[0m
+[[34m2024-03-10T14:42:23.676+0530[0m] {[34mdagrun.py:[0m846} INFO[0m - DagRun Finished: dag_id=data_fetch_pipeline_big_data, execution_date=2024-03-10 09:10:41.696863+00:00, run_id=manual__2024-03-10T09:10:41.696863+00:00, run_start_date=2024-03-10 09:10:43.832271+00:00, run_end_date=2024-03-10 09:12:23.676024+00:00, run_duration=99.843753, state=failed, external_trigger=True, run_type=manual, data_interval_start=2024-03-10 09:10:41.696863+00:00, data_interval_end=2024-03-10 09:10:41.696863+00:00, dag_hash=1a4449422c867970ac7c6342e71b099c[0m
+[2024-03-10T14:46:19.662+0530] {manager.py:523} INFO - DAG data_fetch_pipeline_big_data is missing and will be deactivated.
+[2024-03-10T14:46:19.667+0530] {manager.py:535} INFO - Deactivated 1 DAGs which are no longer present in file.
+[2024-03-10T14:46:19.820+0530] {manager.py:539} INFO - Deleted DAG data_fetch_pipeline_big_data in serialized_dag table
+[[34m2024-03-10T14:47:17.136+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:52:17.667+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T14:57:17.913+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:02:18.053+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:07:18.564+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:27:21.728+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:30:04.825+0530[0m] {[34mdagrun.py:[0m795} INFO[0m - Marking run <DagRun hello_world @ 2024-03-10 09:00:00+00:00: scheduled__2024-03-10T09:00:00+00:00, state:running, queued_at: 2024-03-10 10:00:01.250203+00:00. externally triggered: False> successful[0m
+[[34m2024-03-10T15:30:04.826+0530[0m] {[34mdagrun.py:[0m846} INFO[0m - DagRun Finished: dag_id=hello_world, execution_date=2024-03-10 09:00:00+00:00, run_id=scheduled__2024-03-10T09:00:00+00:00, run_start_date=2024-03-10 10:00:01.346370+00:00, run_end_date=2024-03-10 10:00:04.826299+00:00, run_duration=3.479929, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2024-03-10 09:00:00+00:00, data_interval_end=2024-03-10 10:00:00+00:00, dag_hash=2ae157940796c15adf34d7e917573a70[0m
+[[34m2024-03-10T15:30:04.830+0530[0m] {[34mdag.py:[0m3834} INFO[0m - Setting next_dagrun for hello_world to 2024-03-10 10:00:00+00:00, run_after=2024-03-10 11:00:00+00:00[0m
+[[34m2024-03-10T15:32:22.077+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:37:22.447+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:42:22.619+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:47:23.539+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:52:23.864+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-10T15:57:24.018+0530[0m] {[34mscheduler_job_runner.py:[0m1608} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m

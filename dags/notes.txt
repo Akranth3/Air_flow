@@ -1,0 +1,4 @@
+https://medium.com/international-school-of-ai-data-science/hello-world-using-apache-airflow-792947431455
+
+above is good starting point, try to undersatnd
+it's easy not tough only if you undersatnd.

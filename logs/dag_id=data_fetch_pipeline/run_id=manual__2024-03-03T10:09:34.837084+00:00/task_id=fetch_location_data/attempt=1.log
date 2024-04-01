@@ -1,0 +1,256 @@
+[2024-03-03T16:03:44.319+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_fetch_pipeline.fetch_location_data manual__2024-03-03T10:09:34.837084+00:00 [queued]>
+[2024-03-03T16:03:44.323+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_fetch_pipeline.fetch_location_data manual__2024-03-03T10:09:34.837084+00:00 [queued]>
+[2024-03-03T16:03:44.323+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-03T16:03:44.405+0530] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): fetch_location_data> on 2024-03-03 10:09:34.837084+00:00
+[2024-03-03T16:03:44.414+0530] {standard_task_runner.py:60} INFO - Started process 3969 to run task
+[2024-03-03T16:03:44.420+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'data_fetch_pipeline', 'fetch_location_data', 'manual__2024-03-03T10:09:34.837084+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/assignment_2.py', '--cfg-path', '/tmp/tmp_r80kdmv']
+[2024-03-03T16:03:44.421+0530] {standard_task_runner.py:88} INFO - Job 10: Subtask fetch_location_data
+[2024-03-03T16:03:44.547+0530] {task_command.py:423} INFO - Running <TaskInstance: data_fetch_pipeline.fetch_location_data manual__2024-03-03T10:09:34.837084+00:00 [running]> on host HP
+[2024-03-03T16:03:44.760+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='data_fetch_pipeline' AIRFLOW_CTX_TASK_ID='fetch_location_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-03T10:09:34.837084+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-03T10:09:34.837084+00:00'
+[2024-03-03T16:03:44.764+0530] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-03T16:03:44.765+0530] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'wget -r -np -A "*.csv" https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/']
+[2024-03-03T16:03:44.785+0530] {subprocess.py:86} INFO - Output:
+[2024-03-03T16:03:44.792+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:44--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/
+[2024-03-03T16:03:44.840+0530] {subprocess.py:93} INFO - Resolving www.ncei.noaa.gov (www.ncei.noaa.gov)... 205.167.25.167, 205.167.25.172, 205.167.25.168, ...
+[2024-03-03T16:03:45.102+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:45.991+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:45.991+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:03:45.992+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html.tmp’
+[2024-03-03T16:03:45.992+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:45.993+0530] {subprocess.py:93} INFO -      0K .                                                      58.9M=0s
+[2024-03-03T16:03:45.993+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:45.993+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:45 (58.9 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html.tmp’ saved [1687]
+[2024-03-03T16:03:45.994+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:45.994+0530] {subprocess.py:93} INFO - Loading robots.txt; please ignore errors.
+[2024-03-03T16:03:45.994+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:45--  https://www.ncei.noaa.gov/robots.txt
+[2024-03-03T16:03:46.255+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:47.050+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:47.051+0530] {subprocess.py:93} INFO - Length: 254 [text/plain]
+[2024-03-03T16:03:47.052+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/robots.txt.tmp’
+[2024-03-03T16:03:47.052+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:47.052+0530] {subprocess.py:93} INFO -      0K                                                       100% 9.20M=0s
+[2024-03-03T16:03:47.053+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:47.053+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:47 (9.20 MB/s) - ‘www.ncei.noaa.gov/robots.txt.tmp’ saved [254/254]
+[2024-03-03T16:03:47.053+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:47.054+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/robots.txt.tmp.
+[2024-03-03T16:03:47.054+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html.tmp since it should be rejected.
+[2024-03-03T16:03:47.055+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:47.055+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:47--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/?C=N;O=D
+[2024-03-03T16:03:47.314+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:48.113+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:48.113+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:03:48.114+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=N;O=D.tmp’
+[2024-03-03T16:03:48.114+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:48.115+0530] {subprocess.py:93} INFO -      0K .                                                      53.1M=0s
+[2024-03-03T16:03:48.115+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:48.115+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:48 (53.1 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=N;O=D.tmp’ saved [1687]
+[2024-03-03T16:03:48.116+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:48.116+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=N;O=D.tmp since it should be rejected.
+[2024-03-03T16:03:48.116+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:48.117+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:48--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/?C=M;O=A
+[2024-03-03T16:03:48.376+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:49.172+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:49.173+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:03:49.173+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=M;O=A.tmp’
+[2024-03-03T16:03:49.174+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:49.174+0530] {subprocess.py:93} INFO -      0K .                                                      55.6M=0s
+[2024-03-03T16:03:49.175+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:49.175+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:49 (55.6 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=M;O=A.tmp’ saved [1687]
+[2024-03-03T16:03:49.175+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:49.176+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=M;O=A.tmp since it should be rejected.
+[2024-03-03T16:03:49.176+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:49.176+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:49--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/?C=S;O=A
+[2024-03-03T16:03:49.428+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:50.222+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:50.223+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:03:50.223+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=S;O=A.tmp’
+[2024-03-03T16:03:50.224+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:50.224+0530] {subprocess.py:93} INFO -      0K .                                                      51.3M=0s
+[2024-03-03T16:03:50.224+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:50.225+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:50 (51.3 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=S;O=A.tmp’ saved [1687]
+[2024-03-03T16:03:50.225+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:50.225+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=S;O=A.tmp since it should be rejected.
+[2024-03-03T16:03:50.226+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:50.226+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:50--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/?C=D;O=A
+[2024-03-03T16:03:50.485+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:51.280+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:51.280+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:03:51.281+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=D;O=A.tmp’
+[2024-03-03T16:03:51.281+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:51.281+0530] {subprocess.py:93} INFO -      0K .                                                      52.4M=0s
+[2024-03-03T16:03:51.282+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:51.282+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:51 (52.4 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=D;O=A.tmp’ saved [1687]
+[2024-03-03T16:03:51.283+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:51.283+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=D;O=A.tmp since it should be rejected.
+[2024-03-03T16:03:51.283+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:51.283+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:51--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/02907099999.csv
+[2024-03-03T16:03:51.535+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:52.376+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:52.377+0530] {subprocess.py:93} INFO - Length: 508541 (497K) [text/csv]
+[2024-03-03T16:03:52.377+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02907099999.csv’
+[2024-03-03T16:03:52.378+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:52.885+0530] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... .......... 10% 98.4K 5s
+[2024-03-03T16:03:53.138+0530] {subprocess.py:93} INFO -     50K .......... .......... .......... .......... .......... 20%  197K 3s
+[2024-03-03T16:03:53.142+0530] {subprocess.py:93} INFO -    100K .......... .......... .......... .......... .......... 30% 13.2M 2s
+[2024-03-03T16:03:53.178+0530] {subprocess.py:93} INFO -    150K .......... .......... .......... .......... .......... 40% 1.34M 1s
+[2024-03-03T16:03:53.400+0530] {subprocess.py:93} INFO -    200K .......... .......... .......... .......... .......... 50%  226K 1s
+[2024-03-03T16:03:53.403+0530] {subprocess.py:93} INFO -    250K .......... .......... .......... .......... .......... 60% 12.9M 1s
+[2024-03-03T16:03:53.408+0530] {subprocess.py:93} INFO -    300K .......... .......... .......... .......... .......... 70% 11.2M 0s
+[2024-03-03T16:03:53.414+0530] {subprocess.py:93} INFO -    350K .......... .......... .......... .......... .......... 80% 7.64M 0s
+[2024-03-03T16:03:53.651+0530] {subprocess.py:93} INFO -    400K .......... .......... .......... .......... .......... 90%  211K 0s
+[2024-03-03T16:03:53.655+0530] {subprocess.py:93} INFO -    450K .......... .......... .......... .......... ......    100% 12.6M=1.3s
+[2024-03-03T16:03:53.656+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:53.656+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:53 (388 KB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02907099999.csv’ saved [508541/508541]
+[2024-03-03T16:03:53.657+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:53.657+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:53--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/02950099999.csv
+[2024-03-03T16:03:53.910+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:54.681+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:54.682+0530] {subprocess.py:93} INFO - Length: 512991 (501K) [text/csv]
+[2024-03-03T16:03:54.682+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02950099999.csv’
+[2024-03-03T16:03:54.682+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:55.191+0530] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... ..........  9% 98.2K 5s
+[2024-03-03T16:03:55.449+0530] {subprocess.py:93} INFO -     50K .......... .......... .......... .......... .......... 19%  193K 3s
+[2024-03-03T16:03:55.707+0530] {subprocess.py:93} INFO -    100K .......... .......... .......... .......... .......... 29%  194K 2s
+[2024-03-03T16:03:55.707+0530] {subprocess.py:93} INFO -    150K .......... .......... .......... .......... .......... 39%  304M 2s
+[2024-03-03T16:03:55.710+0530] {subprocess.py:93} INFO -    200K .......... .......... .......... .......... .......... 49% 22.4M 1s
+[2024-03-03T16:03:55.963+0530] {subprocess.py:93} INFO -    250K .......... .......... .......... .......... .......... 59%  197K 1s
+[2024-03-03T16:03:55.967+0530] {subprocess.py:93} INFO -    300K .......... .......... .......... .......... .......... 69% 10.7M 1s
+[2024-03-03T16:03:55.971+0530] {subprocess.py:93} INFO -    350K .......... .......... .......... .......... .......... 79% 12.2M 0s
+[2024-03-03T16:03:55.978+0530] {subprocess.py:93} INFO -    400K .......... .......... .......... .......... .......... 89% 7.07M 0s
+[2024-03-03T16:03:55.980+0530] {subprocess.py:93} INFO -    450K .......... .......... .......... .......... .......... 99% 25.5M 0s
+[2024-03-03T16:03:55.980+0530] {subprocess.py:93} INFO -    500K                                                       100% 1.80T=1.3s
+[2024-03-03T16:03:55.981+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:55.981+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:55 (386 KB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02950099999.csv’ saved [512991/512991]
+[2024-03-03T16:03:55.981+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:55.981+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:55--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/02960099999.csv
+[2024-03-03T16:03:56.236+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:57.008+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:57.008+0530] {subprocess.py:93} INFO - Length: 499895 (488K) [text/csv]
+[2024-03-03T16:03:57.009+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02960099999.csv’
+[2024-03-03T16:03:57.009+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:57.520+0530] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... .......... 10% 97.7K 4s
+[2024-03-03T16:03:57.776+0530] {subprocess.py:93} INFO -     50K .......... .......... .......... .......... .......... 20%  195K 3s
+[2024-03-03T16:03:57.780+0530] {subprocess.py:93} INFO -    100K .......... .......... .......... .......... .......... 30% 10.6M 2s
+[2024-03-03T16:03:58.037+0530] {subprocess.py:93} INFO -    150K .......... .......... .......... .......... .......... 40%  195K 1s
+[2024-03-03T16:03:58.041+0530] {subprocess.py:93} INFO -    200K .......... .......... .......... .......... .......... 51% 10.6M 1s
+[2024-03-03T16:03:58.046+0530] {subprocess.py:93} INFO -    250K .......... .......... .......... .......... .......... 61% 12.1M 1s
+[2024-03-03T16:03:58.298+0530] {subprocess.py:93} INFO -    300K .......... .......... .......... .......... .......... 71%  199K 1s
+[2024-03-03T16:03:58.302+0530] {subprocess.py:93} INFO -    350K .......... .......... .......... .......... .......... 81% 11.1M 0s
+[2024-03-03T16:03:58.306+0530] {subprocess.py:93} INFO -    400K .......... .......... .......... .......... .......... 92% 11.7M 0s
+[2024-03-03T16:03:58.309+0530] {subprocess.py:93} INFO -    450K .......... .......... .......... ........             100% 10.9M=1.3s
+[2024-03-03T16:03:58.309+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:58.309+0530] {subprocess.py:93} INFO - 2024-03-03 16:03:58 (375 KB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02960099999.csv’ saved [499895/499895]
+[2024-03-03T16:03:58.310+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:58.310+0530] {subprocess.py:93} INFO - --2024-03-03 16:03:58--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/02972099999.csv
+[2024-03-03T16:03:58.572+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:03:59.365+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:03:59.366+0530] {subprocess.py:93} INFO - Length: 505361 (494K) [text/csv]
+[2024-03-03T16:03:59.366+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02972099999.csv’
+[2024-03-03T16:03:59.367+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:03:59.890+0530] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... .......... 10% 95.5K 5s
+[2024-03-03T16:04:00.152+0530] {subprocess.py:93} INFO -     50K .......... .......... .......... .......... .......... 20%  192K 3s
+[2024-03-03T16:04:00.156+0530] {subprocess.py:93} INFO -    100K .......... .......... .......... .......... .......... 30% 7.98M 2s
+[2024-03-03T16:04:00.196+0530] {subprocess.py:93} INFO -    150K .......... .......... .......... .......... .......... 40% 1.20M 1s
+[2024-03-03T16:04:00.423+0530] {subprocess.py:93} INFO -    200K .......... .......... .......... .......... .......... 50%  221K 1s
+[2024-03-03T16:04:00.427+0530] {subprocess.py:93} INFO -    250K .......... .......... .......... .......... .......... 60% 11.7M 1s
+[2024-03-03T16:04:00.432+0530] {subprocess.py:93} INFO -    300K .......... .......... .......... .......... .......... 70% 10.8M 0s
+[2024-03-03T16:04:00.460+0530] {subprocess.py:93} INFO -    350K .......... .......... .......... .......... .......... 81% 1.69M 0s
+[2024-03-03T16:04:00.685+0530] {subprocess.py:93} INFO -    400K .......... .......... .......... .......... .......... 91%  223K 0s
+[2024-03-03T16:04:00.690+0530] {subprocess.py:93} INFO -    450K .......... .......... .......... .......... ...       100% 7.95M=1.3s
+[2024-03-03T16:04:00.691+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:00.691+0530] {subprocess.py:93} INFO - 2024-03-03 16:04:00 (373 KB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02972099999.csv’ saved [505361/505361]
+[2024-03-03T16:04:00.691+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:00.692+0530] {subprocess.py:93} INFO - --2024-03-03 16:04:00--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/02981099999.csv
+[2024-03-03T16:04:00.952+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:04:01.829+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:04:01.830+0530] {subprocess.py:93} INFO - Length: 512935 (501K) [text/csv]
+[2024-03-03T16:04:01.830+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02981099999.csv’
+[2024-03-03T16:04:01.830+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:02.353+0530] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... ..........  9% 95.4K 5s
+[2024-03-03T16:04:02.616+0530] {subprocess.py:93} INFO -     50K .......... .......... .......... .......... .......... 19%  191K 3s
+[2024-03-03T16:04:02.619+0530] {subprocess.py:93} INFO -    100K .......... .......... .......... .......... .......... 29% 10.2M 2s
+[2024-03-03T16:04:02.877+0530] {subprocess.py:93} INFO -    150K .......... .......... .......... .......... .......... 39%  194K 2s
+[2024-03-03T16:04:02.882+0530] {subprocess.py:93} INFO -    200K .......... .......... .......... .......... .......... 49% 11.0M 1s
+[2024-03-03T16:04:02.886+0530] {subprocess.py:93} INFO -    250K .......... .......... .......... .......... .......... 59% 11.1M 1s
+[2024-03-03T16:04:02.891+0530] {subprocess.py:93} INFO -    300K .......... .......... .......... .......... .......... 69% 11.9M 0s
+[2024-03-03T16:04:02.896+0530] {subprocess.py:93} INFO -    350K .......... .......... .......... .......... .......... 79% 7.93M 0s
+[2024-03-03T16:04:03.147+0530] {subprocess.py:93} INFO -    400K .......... .......... .......... .......... .......... 89%  200K 0s
+[2024-03-03T16:04:03.152+0530] {subprocess.py:93} INFO -    450K .......... .......... .......... .......... .......... 99% 9.32M 0s
+[2024-03-03T16:04:03.153+0530] {subprocess.py:93} INFO -    500K                                                       100% 12.1M=1.3s
+[2024-03-03T16:04:03.153+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:03.153+0530] {subprocess.py:93} INFO - 2024-03-03 16:04:03 (379 KB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/02981099999.csv’ saved [512935/512935]
+[2024-03-03T16:04:03.154+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:03.154+0530] {subprocess.py:93} INFO - --2024-03-03 16:04:03--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/22707099999.csv
+[2024-03-03T16:04:03.408+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:04:04.246+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:04:04.247+0530] {subprocess.py:93} INFO - Length: 502955 (491K) [text/csv]
+[2024-03-03T16:04:04.247+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/22707099999.csv’
+[2024-03-03T16:04:04.247+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:04.759+0530] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... .......... 10% 97.6K 5s
+[2024-03-03T16:04:05.018+0530] {subprocess.py:93} INFO -     50K .......... .......... .......... .......... .......... 20%  193K 3s
+[2024-03-03T16:04:05.270+0530] {subprocess.py:93} INFO -    100K .......... .......... .......... .......... .......... 30%  198K 2s
+[2024-03-03T16:04:05.274+0530] {subprocess.py:93} INFO -    150K .......... .......... .......... .......... .......... 40% 10.1M 1s
+[2024-03-03T16:04:05.519+0530] {subprocess.py:93} INFO -    200K .......... .......... .......... .......... .......... 50%  204K 1s
+[2024-03-03T16:04:05.525+0530] {subprocess.py:93} INFO -    250K .......... .......... .......... .......... .......... 61% 9.20M 1s
+[2024-03-03T16:04:05.530+0530] {subprocess.py:93} INFO -    300K .......... .......... .......... .......... .......... 71% 8.65M 1s
+[2024-03-03T16:04:05.535+0530] {subprocess.py:93} INFO -    350K .......... .......... .......... .......... .......... 81% 9.19M 0s
+[2024-03-03T16:04:05.773+0530] {subprocess.py:93} INFO -    400K .......... .......... .......... .......... .......... 91%  210K 0s
+[2024-03-03T16:04:05.777+0530] {subprocess.py:93} INFO -    450K .......... .......... .......... .......... .         100% 12.9M=1.5s
+[2024-03-03T16:04:05.778+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:05.778+0530] {subprocess.py:93} INFO - 2024-03-03 16:04:05 (321 KB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/22707099999.csv’ saved [502955/502955]
+[2024-03-03T16:04:05.779+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:05.779+0530] {subprocess.py:93} INFO - --2024-03-03 16:04:05--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/?C=N;O=A
+[2024-03-03T16:04:06.032+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:04:06.841+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:04:06.841+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:04:06.842+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=N;O=A.tmp’
+[2024-03-03T16:04:06.842+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:06.842+0530] {subprocess.py:93} INFO -      0K .                                                      67.7M=0s
+[2024-03-03T16:04:06.843+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:06.843+0530] {subprocess.py:93} INFO - 2024-03-03 16:04:06 (67.7 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=N;O=A.tmp’ saved [1687]
+[2024-03-03T16:04:06.843+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:06.844+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=N;O=A.tmp since it should be rejected.
+[2024-03-03T16:04:06.844+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:06.844+0530] {subprocess.py:93} INFO - --2024-03-03 16:04:06--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/?C=M;O=D
+[2024-03-03T16:04:07.104+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:04:07.909+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:04:07.910+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:04:07.910+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=M;O=D.tmp’
+[2024-03-03T16:04:07.911+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:07.911+0530] {subprocess.py:93} INFO -      0K .                                                      53.9M=0s
+[2024-03-03T16:04:07.911+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:07.912+0530] {subprocess.py:93} INFO - 2024-03-03 16:04:07 (53.9 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=M;O=D.tmp’ saved [1687]
+[2024-03-03T16:04:07.912+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:07.912+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=M;O=D.tmp since it should be rejected.
+[2024-03-03T16:04:07.913+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:07.913+0530] {subprocess.py:93} INFO - --2024-03-03 16:04:07--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/?C=S;O=D
+[2024-03-03T16:04:08.173+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:04:08.979+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:04:08.979+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:04:08.980+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=S;O=D.tmp’
+[2024-03-03T16:04:08.980+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:08.980+0530] {subprocess.py:93} INFO -      0K .                                                      53.3M=0s
+[2024-03-03T16:04:08.981+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:08.981+0530] {subprocess.py:93} INFO - 2024-03-03 16:04:08 (53.3 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=S;O=D.tmp’ saved [1687]
+[2024-03-03T16:04:08.981+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:08.981+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=S;O=D.tmp since it should be rejected.
+[2024-03-03T16:04:08.982+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:08.982+0530] {subprocess.py:93} INFO - --2024-03-03 16:04:08--  https://www.ncei.noaa.gov/data/local-climatological-data/access/1903/?C=D;O=D
+[2024-03-03T16:04:09.241+0530] {subprocess.py:93} INFO - Connecting to www.ncei.noaa.gov (www.ncei.noaa.gov)|205.167.25.167|:443... connected.
+[2024-03-03T16:04:10.132+0530] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2024-03-03T16:04:10.132+0530] {subprocess.py:93} INFO - Length: unspecified [text/html]
+[2024-03-03T16:04:10.133+0530] {subprocess.py:93} INFO - Saving to: ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=D;O=D.tmp’
+[2024-03-03T16:04:10.133+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:10.133+0530] {subprocess.py:93} INFO -      0K .                                                      57.2M=0s
+[2024-03-03T16:04:10.134+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:10.134+0530] {subprocess.py:93} INFO - 2024-03-03 16:04:10 (57.2 MB/s) - ‘www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=D;O=D.tmp’ saved [1687]
+[2024-03-03T16:04:10.134+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:10.135+0530] {subprocess.py:93} INFO - Removing www.ncei.noaa.gov/data/local-climatological-data/access/1903/index.html?C=D;O=D.tmp since it should be rejected.
+[2024-03-03T16:04:10.135+0530] {subprocess.py:93} INFO - 
+[2024-03-03T16:04:10.135+0530] {subprocess.py:93} INFO - FINISHED --2024-03-03 16:04:10--
+[2024-03-03T16:04:10.136+0530] {subprocess.py:93} INFO - Total wall clock time: 25s
+[2024-03-03T16:04:10.136+0530] {subprocess.py:93} INFO - Downloaded: 16 files, 2.9M in 8.1s (371 KB/s)
+[2024-03-03T16:04:10.136+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-03T16:04:10.257+0530] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=data_fetch_pipeline, task_id=fetch_location_data, execution_date=20240303T100934, start_date=20240303T103344, end_date=20240303T103410
+[2024-03-03T16:04:10.540+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-03T16:04:10.573+0530] {taskinstance.py:3309} INFO - 1 downstream tasks scheduled from follow-on schedule check

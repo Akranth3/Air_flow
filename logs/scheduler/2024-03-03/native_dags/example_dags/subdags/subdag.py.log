@@ -1,0 +1,10 @@
+[2024-03-03T16:04:35.742+0530] {processor.py:161} INFO - Started process (PID=4130) to work on /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-03-03T16:04:35.743+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2024-03-03T16:04:35.745+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:35.744+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-03-03T16:04:35.749+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-03-03T16:04:35.768+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py took 0.032 seconds
+[2024-03-03T16:10:03.302+0530] {processor.py:161} INFO - Started process (PID=5408) to work on /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-03-03T16:10:03.305+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2024-03-03T16:10:03.307+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:10:03.306+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-03-03T16:10:03.311+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-03-03T16:10:03.330+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/example_dags/subdags/subdag.py took 0.034 seconds

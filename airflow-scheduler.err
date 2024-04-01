@@ -1,0 +1,15 @@
+[2024-03-10 13:47:13 +0530] [4771] [INFO] Starting gunicorn 21.2.0
+[2024-03-10 13:47:13 +0530] [4771] [INFO] Listening at: http://[::]:8793 (4771)
+[2024-03-10 13:47:13 +0530] [4771] [INFO] Using worker: sync
+[2024-03-10 13:47:13 +0530] [4772] [INFO] Booting worker with pid: 4772
+[2024-03-10 13:47:13 +0530] [4773] [INFO] Booting worker with pid: 4773
+[2024-03-10 15:26:25 +0530] [4771] [CRITICAL] WORKER TIMEOUT (pid:4772)
+[2024-03-10 15:26:25 +0530] [4771] [CRITICAL] WORKER TIMEOUT (pid:4773)
+[2024-03-10 15:26:25 +0530] [4772] [INFO] Worker exiting (pid: 4772)
+[2024-03-10 15:26:25 +0530] [4773] [INFO] Worker exiting (pid: 4773)
+[2024-03-10 15:26:25 +0530] [4771] [ERROR] Worker (pid:4772) exited with code 1
+[2024-03-10 15:26:25 +0530] [4771] [ERROR] Worker (pid:4772) exited with code 1.
+[2024-03-10 15:26:25 +0530] [4771] [ERROR] Worker (pid:4773) exited with code 1
+[2024-03-10 15:26:25 +0530] [4771] [ERROR] Worker (pid:4773) exited with code 1.
+[2024-03-10 15:26:25 +0530] [18594] [INFO] Booting worker with pid: 18594
+[2024-03-10 15:26:25 +0530] [18596] [INFO] Booting worker with pid: 18596

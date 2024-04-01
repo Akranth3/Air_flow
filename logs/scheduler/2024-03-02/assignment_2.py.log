@@ -1,0 +1,144 @@
+[2024-03-03T01:48:12.851+0530] {processor.py:161} INFO - Started process (PID=6554) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:48:12.852+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:48:12.852+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:48:12.852+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:48:12.856+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:48:12.855+0530] {dagbag.py:350} ERROR - Failed to import: /home/akranth/airflow/dags/assignment_2.py
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/akranth/airflow/dags/assignment_2.py", line 2, in <module>
+    from airflow.operators.python import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.operators.python' (/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py)
+[2024-03-03T01:48:12.856+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:48:12.953+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.103 seconds
+[2024-03-03T01:49:22.062+0530] {processor.py:161} INFO - Started process (PID=6695) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:49:22.149+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:49:22.152+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:49:22.151+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:49:22.155+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:49:22.154+0530] {dagbag.py:350} ERROR - Failed to import: /home/akranth/airflow/dags/assignment_2.py
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/akranth/airflow/dags/assignment_2.py", line 2, in <module>
+    from airflow.operators.python import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.operators.python' (/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py)
+[2024-03-03T01:49:22.156+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:49:22.250+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.189 seconds
+[2024-03-03T01:49:56.534+0530] {processor.py:161} INFO - Started process (PID=6771) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:49:56.620+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:49:56.622+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:49:56.621+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:49:56.626+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:49:56.625+0530] {dagbag.py:350} ERROR - Failed to import: /home/akranth/airflow/dags/assignment_2.py
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/akranth/airflow/dags/assignment_2.py", line 2, in <module>
+    from airflow.operators.python import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.operators.python' (/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py)
+[2024-03-03T01:49:56.626+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:49:56.717+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.185 seconds
+[2024-03-03T01:50:28.451+0530] {processor.py:161} INFO - Started process (PID=6811) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:50:28.528+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:50:28.530+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:50:28.529+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:50:28.538+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:50:28.535+0530] {dagbag.py:350} ERROR - Failed to import: /home/akranth/airflow/dags/assignment_2.py
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/akranth/airflow/dags/assignment_2.py", line 2, in <module>
+    from airflow.operators.python import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.operators.python' (/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py)
+[2024-03-03T01:50:28.539+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:50:28.646+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.197 seconds
+[2024-03-03T01:51:00.949+0530] {processor.py:161} INFO - Started process (PID=6930) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:51:00.951+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:51:00.953+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:51:00.952+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:51:00.962+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:51:00.959+0530] {dagbag.py:350} ERROR - Failed to import: /home/akranth/airflow/dags/assignment_2.py
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/akranth/airflow/dags/assignment_2.py", line 2, in <module>
+    from airflow.operators.python import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.operators.python' (/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py)
+[2024-03-03T01:51:00.963+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:51:01.103+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.161 seconds
+[2024-03-03T01:51:31.795+0530] {processor.py:161} INFO - Started process (PID=7004) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:51:31.870+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:51:31.873+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:51:31.872+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:51:31.880+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:51:31.877+0530] {dagbag.py:350} ERROR - Failed to import: /home/akranth/airflow/dags/assignment_2.py
+Traceback (most recent call last):
+  File "/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/akranth/airflow/dags/assignment_2.py", line 2, in <module>
+    from airflow.operators.python import BashOperator
+ImportError: cannot import name 'BashOperator' from 'airflow.operators.python' (/home/akranth/airflow/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py)
+[2024-03-03T01:51:31.881+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:51:31.998+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.205 seconds
+[2024-03-03T01:52:03.987+0530] {processor.py:161} INFO - Started process (PID=7060) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:52:03.989+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:52:03.991+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:03.990+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:52:04.005+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:52:04.293+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:04.292+0530] {override.py:1769} INFO - Created Permission View: can edit on DAG:data_fetch_pipeline
+[2024-03-03T01:52:04.393+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:04.392+0530] {override.py:1769} INFO - Created Permission View: can read on DAG:data_fetch_pipeline
+[2024-03-03T01:52:04.484+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:04.483+0530] {override.py:1769} INFO - Created Permission View: can delete on DAG:data_fetch_pipeline
+[2024-03-03T01:52:04.485+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:04.485+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T01:52:04.511+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:04.511+0530] {dag.py:3069} INFO - Creating ORM DAG for data_fetch_pipeline
+[2024-03-03T01:52:04.513+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:04.512+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T01:52:04.693+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.712 seconds
+[2024-03-03T01:52:35.261+0530] {processor.py:161} INFO - Started process (PID=7133) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:52:35.295+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:52:35.296+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:35.296+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:52:35.304+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:52:35.321+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:35.321+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T01:52:35.332+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:52:35.332+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T01:52:35.490+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.232 seconds
+[2024-03-03T01:53:06.161+0530] {processor.py:161} INFO - Started process (PID=7168) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:53:06.163+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:53:06.165+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:53:06.164+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:53:06.182+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:53:06.199+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:53:06.199+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T01:53:06.208+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:53:06.208+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T01:53:06.363+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.208 seconds
+[2024-03-03T01:53:46.197+0530] {processor.py:161} INFO - Started process (PID=7211) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:53:46.288+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:53:46.291+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:53:46.290+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:53:46.312+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:53:46.334+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:53:46.333+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T01:53:46.344+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:53:46.344+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T01:53:46.462+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.268 seconds
+[2024-03-03T01:54:20.583+0530] {processor.py:161} INFO - Started process (PID=7244) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:54:20.664+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:54:20.667+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:54:20.666+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:54:20.689+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:54:20.713+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:54:20.713+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T01:54:20.723+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:54:20.723+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T01:54:20.913+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.334 seconds
+[2024-03-03T01:54:56.259+0530] {processor.py:161} INFO - Started process (PID=7279) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:54:56.341+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:54:56.343+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:54:56.342+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:54:56.349+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:54:56.361+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:54:56.361+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T01:54:56.371+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:54:56.371+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T01:54:56.481+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.224 seconds
+[2024-03-03T01:55:30.518+0530] {processor.py:161} INFO - Started process (PID=7312) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:55:30.519+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:55:30.520+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:55:30.520+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:55:30.526+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:55:30.537+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:55:30.537+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T01:55:30.545+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:55:30.545+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T01:55:30.725+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.208 seconds
+[2024-03-03T01:56:05.450+0530] {processor.py:161} INFO - Started process (PID=7354) to work on /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:56:05.456+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/assignment_2.py for tasks to queue
+[2024-03-03T01:56:05.458+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:56:05.457+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:56:05.477+0530] {processor.py:840} INFO - DAG(s) 'data_fetch_pipeline' retrieved from /home/akranth/airflow/dags/assignment_2.py
+[2024-03-03T01:56:05.499+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:56:05.499+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T01:56:05.508+0530] {logging_mixin.py:188} INFO - [2024-03-03T01:56:05.508+0530] {dag.py:3834} INFO - Setting next_dagrun for data_fetch_pipeline to None, run_after=None
+[2024-03-03T01:56:05.708+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/assignment_2.py took 0.260 seconds

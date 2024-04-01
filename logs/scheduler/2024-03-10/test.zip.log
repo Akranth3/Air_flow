@@ -1,0 +1,30 @@
+[2024-03-10T15:41:28.397+0530] {processor.py:161} INFO - Started process (PID=21543) to work on /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:41:28.398+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/test.zip for tasks to queue
+[2024-03-10T15:41:28.400+0530] {logging_mixin.py:188} INFO - [2024-03-10T15:41:28.399+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:41:28.402+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:41:28.415+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/test.zip took 0.021 seconds
+[2024-03-10T15:41:29.335+0530] {processor.py:161} INFO - Started process (PID=21544) to work on /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:41:29.335+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/test.zip for tasks to queue
+[2024-03-10T15:41:29.336+0530] {logging_mixin.py:188} INFO - [2024-03-10T15:41:29.336+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:41:29.337+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:41:29.344+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/test.zip took 0.012 seconds
+[2024-03-10T15:42:03.962+0530] {processor.py:161} INFO - Started process (PID=21609) to work on /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:04.045+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/test.zip for tasks to queue
+[2024-03-10T15:42:04.048+0530] {logging_mixin.py:188} INFO - [2024-03-10T15:42:04.047+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:04.051+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:04.074+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/test.zip took 0.114 seconds
+[2024-03-10T15:42:14.169+0530] {processor.py:161} INFO - Started process (PID=21635) to work on /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:14.172+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/test.zip for tasks to queue
+[2024-03-10T15:42:14.173+0530] {logging_mixin.py:188} INFO - [2024-03-10T15:42:14.172+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:14.173+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:14.181+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/test.zip took 0.014 seconds
+[2024-03-10T15:42:40.316+0530] {processor.py:161} INFO - Started process (PID=21686) to work on /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:40.390+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/test.zip for tasks to queue
+[2024-03-10T15:42:40.392+0530] {logging_mixin.py:188} INFO - [2024-03-10T15:42:40.391+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:40.395+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:40.418+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/test.zip took 0.108 seconds
+[2024-03-10T15:42:50.357+0530] {processor.py:161} INFO - Started process (PID=21707) to work on /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:50.359+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/test.zip for tasks to queue
+[2024-03-10T15:42:50.361+0530] {logging_mixin.py:188} INFO - [2024-03-10T15:42:50.360+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:50.362+0530] {processor.py:842} WARNING - No viable dags retrieved from /home/akranth/airflow/dags/test.zip
+[2024-03-10T15:42:50.375+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/test.zip took 0.024 seconds

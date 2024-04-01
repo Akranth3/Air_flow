@@ -1,0 +1,14 @@
+[2024-03-03T16:04:30.742+0530] {processor.py:161} INFO - Started process (PID=4084) to work on /home/akranth/airflow/dags/hello_world.py
+[2024-03-03T16:04:30.744+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/hello_world.py for tasks to queue
+[2024-03-03T16:04:30.747+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:30.746+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/hello_world.py
+[2024-03-03T16:04:30.756+0530] {processor.py:840} INFO - DAG(s) 'hello_world' retrieved from /home/akranth/airflow/dags/hello_world.py
+[2024-03-03T16:04:30.904+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:30.904+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T16:04:30.915+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:04:30.915+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world to 2024-03-03 10:00:00+00:00, run_after=2024-03-03 11:00:00+00:00
+[2024-03-03T16:04:31.030+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/hello_world.py took 0.296 seconds
+[2024-03-03T16:09:58.427+0530] {processor.py:161} INFO - Started process (PID=5391) to work on /home/akranth/airflow/dags/hello_world.py
+[2024-03-03T16:09:58.428+0530] {processor.py:830} INFO - Processing file /home/akranth/airflow/dags/hello_world.py for tasks to queue
+[2024-03-03T16:09:58.429+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:09:58.428+0530] {dagbag.py:540} INFO - Filling up the DagBag from /home/akranth/airflow/dags/hello_world.py
+[2024-03-03T16:09:58.438+0530] {processor.py:840} INFO - DAG(s) 'hello_world' retrieved from /home/akranth/airflow/dags/hello_world.py
+[2024-03-03T16:09:58.453+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:09:58.452+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-03T16:09:58.468+0530] {logging_mixin.py:188} INFO - [2024-03-03T16:09:58.468+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world to 2024-03-03 10:00:00+00:00, run_after=2024-03-03 11:00:00+00:00
+[2024-03-03T16:09:58.565+0530] {processor.py:183} INFO - Processing /home/akranth/airflow/dags/hello_world.py took 0.140 seconds
